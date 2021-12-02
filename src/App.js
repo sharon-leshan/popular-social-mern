@@ -4,10 +4,12 @@ import Sidebar from './components/Sidebar'
 import Feed from './components/Feed'
 import {useState} from 'react'
 import Login from './components/Login'
+import { useStateValue } from './StateProvider';
 // import Widget from './Widget'
 
 function App() {
-  const [user, setUser] = useState(null)
+  const [{ user }, dispatch] = useStateValue()
+  // const [user, setUser] = useState(null)
   return (
     <AppWrapper>
       {user ? (

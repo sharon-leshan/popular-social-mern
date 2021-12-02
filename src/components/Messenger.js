@@ -8,6 +8,7 @@ import { useStateValue } from '../StateProvider';
 
 const Messenger = () => {
     const [input, setInput] = useState('')
+
     const [image, setImage] = useState(null)
     const [{user}, dispatch] = useStateValue()
 
@@ -57,7 +58,7 @@ const Messenger = () => {
 }
 const MessengerWrapper = styled.div `
     display: flex;
-    margin: top;
+    margin-top: 30px;
     flex-direction: column;
     background-color: white;
     border-radius: 15px;
@@ -70,12 +71,12 @@ const MessengerTop = styled.div `
     padding: 15px;
     form{
         flex: 1;
-        display: f;ex;
+        display: flex;
         .messenger__Input{
             flex: 1;
             outline-width: 0;
             border: none;
-            paddding: 5px 20px;
+            padding: 5px 20px;
             margin: 0 10px;
             border-radius: 999px;
             background-color: #eff2f5;
@@ -91,13 +92,12 @@ const MessengerTop = styled.div `
 const MessengerBottom = styled.div `
     display: flex;
     justify-content: space-evenly;
-    .messenger__option{
+    .messenger__option {
         padding: 20px;
         display: flex;
         align-items: center;
         color: gray;
         margin: 5px;
-    }
     h3{
         font-size: medium;
         margin-left: 10px;
@@ -107,5 +107,6 @@ const MessengerBottom = styled.div `
         border-radius: 20px;
         cursor: pointer;
     }
+}
 `
 export default Messenger

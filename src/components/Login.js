@@ -6,13 +6,19 @@ import { useStateValue } from '../StateProvider';
 import {actionTypes} from '../Reducer'
 
 const Login = () => {
-    const [ {}, dispatch] = useStateValue()
-    const Login = () => {
-        const signIn = () => {
+    const [{}, dispatch] = useStateValue()
+
+    const signIn = () => {
         auth.signInWithPopup(provider)
-        .then(result => console.log(result))
+        .then(result => {
+            console.log(result)
+            dispatch({
+                type: actionTypes.SET_USER,
+                user: result.user
+            })
+        })
         .catch(error => alert(error.message))
-        }
+    }
         return (
             <LoginWrapper>
                 <div className="login__logo">
@@ -22,7 +28,6 @@ const Login = () => {
                 <Button type='submit' className="login__btn" onClick={signIn}>Sign In</Button>
             </LoginWrapper>
         )
-    }
 }
 const LoginWrapper = styled.div `
     display: grid;

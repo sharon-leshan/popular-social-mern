@@ -66,7 +66,7 @@ const PostTop = styled.div `
     display: flex;
     position: relative;
     align-items: center;
-    paddding: 15px;
+    padding: 15px;
     .post__avatar{
         margin-right: 10px;
     }
@@ -81,7 +81,7 @@ const PostTop = styled.div `
     }
 `
 const PostBottom = styled.div `
-    margin-top: 10px
+    margin-top: 10px;
     margin-bottom: 10px;
     padding: 15px 25px;
 `

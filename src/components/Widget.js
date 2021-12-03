@@ -17,4 +17,3 @@ const Widget = () => {
 };
 const WidgetWrapper = styled.div``;
 export default Widget;
-

@@ -43,11 +43,8 @@ const Header = () => {
       </HeaderCenter>
       <HeaderRight>
         <div className="header__info">
-          {/* <Avatar src={user.photoURL}  />
-
-                    <h4>{user.displayName}</h4> */}
-          <Avatar src="" />
-          <h4>Maleo</h4>{" "}
+          <Avatar src={user.photoURL} />
+          <h4>{user.displayName}</h4>
         </div>
         <IconButton>
           <AddIcon />

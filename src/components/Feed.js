@@ -4,10 +4,10 @@ import styled from "styled-components";
 import Messenger from "./Messenger";
 import Post from "./Post";
 import axios from "../axios";
-import Pusher from 'pusher-js'
+import Pusher from "pusher-js";
 
-const pusher = new Pusher('5b37cfaabe62deb5b66c', {
-  cluster: 'mt1'
+const pusher = new Pusher("5b37cfaabe62deb5b66c", {
+  cluster: "mt1",
 });
 
 const Feed = () => {
@@ -19,11 +19,11 @@ const Feed = () => {
     });
   };
   useEffect(() => {
-    const channel = pusher.subscribe('posts');
-    channel.bind('inserted', (data) => {
-      syncFeed()
+    const channel = pusher.subscribe("posts");
+    channel.bind("inserted", (data) => {
+      syncFeed();
     });
-  }, [])
+  }, []);
   useEffect(() => {
     syncFeed();
   }, []);

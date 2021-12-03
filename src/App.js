@@ -12,13 +12,15 @@ function App() {
   // const [user, setUser] = useState(null)
   return (
     <AppWrapper>
-      <Header />
       {user ? (
-        <div className="app__body">
-          <Sidebar />
-          <Feed />
-          <Widget />
-        </div>
+        <>
+          <Header />
+          <div className="app__body">
+            <Sidebar />
+            <Feed />
+            <Widget />
+          </div>
+        </>
       ) : (
         <Login />
       )}

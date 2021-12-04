@@ -5,11 +5,10 @@ import Feed from "./components/Feed";
 import Login from "./components/Login";
 import { useStateValue } from "./StateProvider";
 import Widget from "./components/Widget";
-// import Widget from './Widget'
 
 function App() {
   const [{ user }, dispatch] = useStateValue();
-  // const [user, setUser] = useState(null)
+
   return (
     <AppWrapper>
       {user ? (

@@ -1,16 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-import SearchIcon from "@material-ui/icons/Search";
-import HomeIcon from "@material-ui/icons/Home";
-import FlagIcon from "@material-ui/icons/Flag";
-import SubscriptionsOutlinedIcon from "@material-ui/icons/SubscriptionsOutlined";
-import StorefrontOutlinedIcon from "@material-ui/icons/StorefrontOutlined";
-import SupervisedUserCircleIcon from "@material-ui/icons/SupervisedUserCircle";
+import {
+  StorefrontOutlined,
+  Home,
+  SubscriptionsOutlined,
+  SupervisedUserCircle,
+  Flag,
+  Search,
+  Add,
+  Forum,
+  NotificationsActive,
+  ExpandMore,
+} from "@material-ui/icons/";
 import { Avatar, IconButton } from "@material-ui/core";
-import AddIcon from "@material-ui/icons/Add";
-import ForumIcon from "@material-ui/icons/Flag";
-import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { useStateValue } from "../StateProvider";
 
 const Header = () => {
@@ -21,24 +23,24 @@ const Header = () => {
         <img src="logo192.png" alt="Popular" />
       </HeaderLeft>
       <HeaderInput>
-        <SearchIcon />
+        <Search />
         <input placeholder="Search Popular" type="text" />
       </HeaderInput>
       <HeaderCenter>
         <div className="header__option header__option--active">
-          <HomeIcon fontsize="large" />
+          <Home fontsize="large" />
         </div>
         <div className="header__option">
-          <FlagIcon fontsize="large" />
+          <Flag fontsize="large" />
         </div>
         <div className="header__option">
-          <SubscriptionsOutlinedIcon fontsize="large" />
+          <SubscriptionsOutlined fontsize="large" />
         </div>
         <div className="header__option">
-          <StorefrontOutlinedIcon fontsize="large" />
+          <StorefrontOutlined fontsize="large" />
         </div>
         <div className="header__option">
-          <SupervisedUserCircleIcon fontsize="large" />
+          <SupervisedUserCircle fontsize="large" />
         </div>
       </HeaderCenter>
       <HeaderRight>
@@ -47,16 +49,16 @@ const Header = () => {
           <h4>{user.displayName}</h4>
         </div>
         <IconButton>
-          <AddIcon />
+          <Add />
         </IconButton>
         <IconButton>
-          <ForumIcon />
+          <Forum />
         </IconButton>
         <IconButton>
-          <NotificationsActiveIcon />
+          <NotificationsActive />
         </IconButton>
         <IconButton>
-          <ExpandMoreIcon />
+          <ExpandMore />
         </IconButton>
       </HeaderRight>
     </HeaderWrapper>

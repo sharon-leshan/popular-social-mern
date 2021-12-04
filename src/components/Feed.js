@@ -14,10 +14,11 @@ const Feed = () => {
   const [postsData, setPostsData] = useState([]);
   const syncFeed = () => {
     axios.get("/posts").then((res) => {
-      console.log(res.data);
+      // console.log(res.data);
       setPostsData(res.data);
     });
   };
+  
   useEffect(() => {
     const channel = pusher.subscribe("posts");
     channel.bind("inserted", (data) => {

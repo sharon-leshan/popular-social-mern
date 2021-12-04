@@ -1,6 +1,7 @@
 [![Popular Social Network](assets/social.png)](https://popular-social-mern-a9128.web.app/)
 
 ## Technologies
+
 - React
 - Firebase
 - Google Authentication
@@ -10,6 +11,7 @@
 - Pusher
 
 ## Demo
+
 [![Home Page](assets/social1.png)](https://popular-social-mern-a9128.web.app/)
 
 [![Post 1](assets/social2.png)](https://popular-social-mern-a9128.web.app/)

@@ -23,7 +23,7 @@ const Post = ({ profilePic, message, timestamp, imgName, username }) => {
       {imgName ? (
         <div className="post__image">
           <img
-            src={`http://localhost:9000/images/single?name=${imgName}`}
+            src={`https://popular-social-mern-maleo.herokuapp.com/images/single?name=${imgName}`}
             alt="Posts"
           />
         </div>

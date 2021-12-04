@@ -18,7 +18,7 @@ const Feed = () => {
       setPostsData(res.data);
     });
   };
-  
+
   useEffect(() => {
     const channel = pusher.subscribe("posts");
     channel.bind("inserted", (data) => {

@@ -2,7 +2,7 @@
 
 ## Technologies
 
-- React
+- Reactjs
 - Firebase
 - Google Authentication
 - Nodejs
